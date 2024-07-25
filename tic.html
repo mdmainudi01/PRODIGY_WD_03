@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="tac.css">
+</head>
+<body>
+    <div class="front-page">
+        <h1>Welcome to Tic-Tac-Toe</h1>
+        <div class="instructions">
+            <p>Instructions: Players take turns placing their mark (X or O) on the board. The first player to align three of their marks horizontally, vertically, or diagonally wins. If all cells are filled without a winner, the game ends in a draw.</p>
+        </div>
+        <div class="mode-selection">
+            <button id="playWithFriend">Play with Friend</button>
+            <button id="playWithAI">Play with AI</button>
+        </div>
+    </div>
+    <div class="container" id="gameContainer" style="display: none;">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="current-player" id="currentPlayer">Current Player: X</div>
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        <button id="resetButton">Reset Game</button>
+        <div id="message"></div>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content" id="popupContent">
+            <p id="popupMessage"></p>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+    <script src="toe.js"></script>
+</body>
+</html>

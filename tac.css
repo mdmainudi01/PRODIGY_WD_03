@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.front-page, .container {
+    text-align: center;
+    background-color: rgba(195, 186, 227, 0.741);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(223, 179, 244, 0.775);
+}
+
+.instructions {
+    background-color: rgba(101, 83, 139, 0.701); /* Translucent teal background */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.mode-selection {
+    margin-top: 20px;
+}
+
+.mode-selection button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #6f3e73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.mode-selection button:hover {
+    background-color: #aa429291;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #6f3e73;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cell:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #6f3e73;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #aa429291;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.current-player {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #b96fc6d5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.popup-content button 
+{
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #632b56d0;
+    color: white;
+    border: none;s
+    border-radius: 5px;
+}
+
+.popup-content button:hover {
+    background-color: #aa429291;
+}
